@@ -1,8 +1,10 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23271533.svg)](https://doi.org/10.5281/zenodo.23271533)
+
 # Post-Pandemic Pedestrian Injury Severity in the United States
 
-Code for the study *"Post-pandemic shifts in pedestrian injury severity in the United States: an explainable machine learning and survey-weighted analysis of CRSS 2016–2024"* (manuscript in preparation).
+Code for the study *"Post-pandemic shifts in pedestrian injury severity in the United States: an explainable machine learning and survey-weighted analysis of CRSS 2016–2024"* (manuscript submitted to *Traffic Injury Prevention*, 2026).
 
-**Author:** Subash Kumar
+**Author:** Subash Kumar ([ORCID 0009-0003-6661-3424](https://orcid.org/0009-0003-6661-3424))
 
 ## Key findings
 
@@ -21,13 +23,7 @@ This study uses NHTSA's **Crash Report Sampling System (CRSS)**, 2016–2024. Th
 
 ## Requirements
 
-Python 3.10+ with:
-
-```
-pandas pyarrow numpy scikit-learn lightgbm shap statsmodels matplotlib
-```
-
-Install with `pip install pandas pyarrow numpy scikit-learn lightgbm shap statsmodels matplotlib`
+Python 3.10+. Install the packages with `pip install pandas pyarrow numpy scikit-learn lightgbm shap statsmodels matplotlib`
 
 ## How to run (in order)
 
@@ -43,6 +39,7 @@ Install with `pip install pandas pyarrow numpy scikit-learn lightgbm shap statsm
 | 8 | `region_adjusted.py`, `region_boot.py` | Adjusted West × post-pandemic model, stratified PSU bootstrap |
 | 9 | `region_robust.py` | Sensitivity analyses |
 | 10 | `table1.py`, `fig1_trend.py`, `fig2_shap.py`, `fig3_levels.py` | Table 1 and Figures 1–3 |
+| 11 | `figures_journal.py` | Journal-style versions of Figures 1–3 (TIFF/PDF) |
 
 ## Methods notes
 
@@ -51,9 +48,13 @@ Install with `pip install pandas pyarrow numpy scikit-learn lightgbm shap statsm
 - Train/test splits grouped by crash.
 - Survey variance: Taylor linearization (`PSUSTRAT`, `PSU`) and Rao–Wu rescaling bootstrap.
 
-## Citation
+## How to cite
 
-Citation details will be added when the preprint is posted.
+If you use this code, please cite:
+
+Kumar S. 2026. crss-pedestrian-severity: Post-pandemic pedestrian injury severity analysis, CRSS 2016–2024 (v1.0.1) [software]. Zenodo. https://doi.org/10.5281/zenodo.23271533
+
+You can also use the **"Cite this repository"** button on the right side of this page.
 
 ## Use of AI tools
 
