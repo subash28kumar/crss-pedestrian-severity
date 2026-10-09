@@ -10,7 +10,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-BASE = Path(r"C:\Users\skumar\Downloads\CRSS_2016_2024")
+BASE = Path(__file__).resolve().parent
 m = pd.read_parquet(BASE / "model_data.parquet")
 
 FEATURES = ["PERIOD", "AGE_GRP", "SEX", "LIGHT", "WEATHER", "TIME_OF_DAY", "WEEKEND",

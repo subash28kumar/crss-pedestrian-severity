@@ -3,7 +3,7 @@ import numpy as np
 from pathlib import Path
 import matplotlib.pyplot as plt
 
-BASE = Path(r"C:\Users\skumar\Downloads\CRSS_2016_2024")
+BASE = Path(__file__).resolve().parent
 OUT = BASE / "figures"
 OUT.mkdir(exist_ok=True)
 

@@ -4,7 +4,7 @@ from pathlib import Path
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 
-BASE = Path(r"C:\Users\skumar\Downloads\CRSS_2016_2024")
+BASE = Path(__file__).resolve().parent
 m = pd.read_parquet(BASE / "model_data.parquet")
 m = m[m["PERIOD"] != "COVID"].copy()
 m["WEST"] = (m["REGION"] == "c4").astype(int)

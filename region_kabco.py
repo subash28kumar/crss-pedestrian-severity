@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-BASE = Path(r"C:\Users\skumar\Downloads\CRSS_2016_2024")
+BASE = Path(__file__).resolve().parent
 d = pd.read_parquet(BASE / "pedestrians_2016_2024.parquet")
 for c in ["INJ_SEV", "REGION", "WEIGHT", "YEAR", "PSU"]:
     d[c] = pd.to_numeric(d[c], errors="coerce")

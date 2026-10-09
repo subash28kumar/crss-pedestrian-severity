@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-BASE = Path(r"C:\Users\skumar\Downloads\CRSS_2016_2024")
+BASE = Path(__file__).resolve().parent
 m = pd.read_parquet(BASE / "model_data.parquet")
 m = m[m["PERIOD"] != "COVID"].copy()
 RNAME = {"c1": "Northeast", "c2": "Midwest", "c3": "South", "c4": "West"}

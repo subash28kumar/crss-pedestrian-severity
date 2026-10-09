@@ -6,7 +6,7 @@ import statsmodels.formula.api as smf
 import warnings
 warnings.filterwarnings("ignore")
 
-BASE = Path(r"C:\Users\skumar\Downloads\CRSS_2016_2024")
+BASE = Path(__file__).resolve().parent
 full = pd.read_parquet(BASE / "model_data.parquet")
 full = full[full["PERIOD"] != "COVID"].copy()
 full["WEST"] = (full["REGION"] == "c4").astype(int)

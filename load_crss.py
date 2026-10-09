@@ -1,7 +1,7 @@
 import pandas as pd
 from pathlib import Path
 
-BASE = Path(r"C:\Users\skumar\Downloads\CRSS_2016_2024")
+BASE = Path(__file__).resolve().parent
 YEARS = range(2016, 2025)
 
 def find_file(year, name, aux=False):

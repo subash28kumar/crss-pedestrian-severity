@@ -5,7 +5,7 @@ import statsmodels.api as sm
 import warnings
 warnings.filterwarnings("ignore")
 
-BASE = Path(r"C:\Users\skumar\Downloads\CRSS_2016_2024")
+BASE = Path(__file__).resolve().parent
 B = 500
 rng = np.random.default_rng(2026)
 

@@ -7,7 +7,7 @@ import shap
 from sklearn.model_selection import GroupShuffleSplit
 from sklearn.metrics import roc_auc_score, average_precision_score
 
-BASE = Path(r"C:\Users\skumar\Downloads\CRSS_2016_2024")
+BASE = Path(__file__).resolve().parent
 OUT = BASE / "figures"
 OUT.mkdir(exist_ok=True)
 
