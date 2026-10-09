@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "crss-pedestrian-severity: Post-pandemic pedestrian injury severity analysis, CRSS 2016-2024"
+authors:
+  - family-names: Kumar
+    given-names: Subash
+    orcid: "https://orcid.org/0009-0003-6661-3424"
+    affiliation: "Independent Researcher, Ellicott City, Maryland, USA"
+repository-code: "https://github.com/subash28kumar/crss-pedestrian-severity"
+license: MIT
+date-released: 2026-10-09
+keywords:
+  - pedestrian safety
+  - injury severity
+  - CRSS
+  - explainable machine learning
+  - SHAP
